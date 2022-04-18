@@ -3,21 +3,38 @@ header {
     background-image: url(../assets/elleGassnerHomeBgImage.png);
     background-size: cover;
     background-position: center;
+}
 
-    .navParent {
-        display: flex;
-        justify-content: space-between;
-        
-        .mainNav ul {
+.navParent {
+    display: flex;
+    justify-content: space-between;
+    
+    .mainNav {
+        .desktopNav {
             display: flex;
             justify-content: space-between;
+            padding-top: 10px;
 
-            li {
+            a {
+                text-decoration: none;
+                color: $primaryColor;
                 margin-left: 25px;
-                padding-top: 10px;
             }
         }
-    }
+
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: $primaryColor;
+                margin-left: 25px;
+            }
+        }
+    } 
+}
 
     .headerContent {
         margin-top: 25%;
@@ -30,7 +47,7 @@ header {
             margin-top: 0;
         }
     }
-}
+
 
 
 .aboutParent {
@@ -115,7 +132,7 @@ header {
     }
 }
 
-.skillsIcons span {
+.iconsTransform {
     display: none;    
 }
 
@@ -140,7 +157,6 @@ header {
         }
 }
 
-// FIX FONTAWESOME ICONS TEXT ABOVE
 
 .websitesParent {
     display: flex;
@@ -188,16 +204,20 @@ header {
         flex-direction: column;
         margin-right: 25px;
 
-        h4 {
-            margin: 10px 0 25px 0px;
-            background-image: url(../assets/93812-[Converted].png);
-            background-position: left;
-            background-repeat: no-repeat;
+        .project1Text {
+            h4 {
+                margin: 10px 0 25px 0px;
+                background-image: url(../assets/93812-[Converted].png);
+                background-position: left;
+                background-repeat: no-repeat;
+            }
+
+            p {
+                margin-bottom: 10%;
+            }
         }
 
-        p {
-            margin-bottom: 10%;
-        }
+        
 
         .project1SmImage {
             flex-basis: 40%;
@@ -245,8 +265,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    .project2ImagesGrp1,
-    .project2ImagesGrp2 {
+    .project2ImagesGrp1 {
         flex-basis: calc(50% - 15px);
         display: flex;
         flex-direction: column;
@@ -294,7 +313,6 @@ header {
         }
     }
 }
-
 
 
 .contactParent {
@@ -376,11 +394,19 @@ header {
 
 .footerParent {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 10%;
 
-    a {
+    .toTop {
         color: $tertiaryColor;
         font-size: 3rem;
+    }
+
+    .paintSwatchCredits {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $secondaryColor;
     }
 }
 
