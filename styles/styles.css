@@ -453,9 +453,6 @@ header {
   padding-left: 15px;
 }
 
-.experienceSkills {
-  font-size: 5rem;
-}
 .experienceSkills h4 {
   font-size: 5rem;
   text-transform: none;
@@ -492,8 +489,8 @@ header {
 }
 .experienceSkills li:hover, .experienceSkills li:active, .experienceSkills li:focus {
   font-size: 6rem;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .experienceSkills li:hover .iconsTransform, .experienceSkills li:active .iconsTransform, .experienceSkills li:focus .iconsTransform {
   display: block;
@@ -501,8 +498,8 @@ header {
   position: absolute;
   bottom: -40px;
   left: 1px;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .websitesParent {
@@ -1087,5 +1084,114 @@ header {
 
   .websitesParent .websitesContent h4 {
     background-position: center;
+  }
+
+  .project1Parent .project1MainImage {
+    margin: 0;
+  }
+  .project1Parent .project1MainImage img {
+    height: 400px;
+  }
+
+  .project2ImageParent .project2ImagesGrp1 {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .project2ImageParent .project2ImagesGrp1 .project2Image1Grp1 {
+    padding-top: 10px;
+  }
+  .project2ImageParent .project2ImagesGrp2 {
+    display: none;
+  }
+
+  .contactForm .userDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm .userDetails .userName,
+.contactForm .userDetails .userEmail {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 400px) {
+  .headerContent {
+    margin-top: 50%;
+  }
+  .headerContent h2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .headerContent h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 25px;
+  }
+
+  .aboutParent .aboutImage img {
+    width: 70%;
+  }
+  .aboutParent .aboutContent h4 {
+    font-size: 4rem;
+  }
+
+  .powerSkills .skillsContent {
+    margin: 0 auto;
+  }
+  .powerSkills .skillsContent h4 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .powerSkills .skillsContent ul {
+    padding-left: 5%;
+  }
+
+  .experienceSkills h4 {
+    font-size: 4rem;
+    margin: 25px 0 0 0;
+  }
+
+  .websitesParent .websitesContent h4 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .websitesParent .websitesImages .website1 img,
+.websitesParent .websitesImages .website2 img {
+    height: 300px;
+  }
+
+  .project1Parent .project1Content .project1Text h4 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .project1Parent .project1MainImage img {
+    height: 300px;
+  }
+
+  .project2Parent .project2Content h4 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .contactParent h4 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .contactParent .contactChild {
+    border: 5px solid #6D9886;
+  }
+  .contactParent .contactChild ul {
+    text-align: center;
+  }
+  .contactParent .contactChild ul li {
+    padding-left: 0;
   }
 }

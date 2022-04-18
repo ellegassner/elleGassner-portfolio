@@ -389,5 +389,161 @@
         }
     }
 
+    .project1Parent {
+        .project1MainImage {
+            margin: 0;
 
+            img {
+                height: 400px;
+            }
+        }
+    }
+
+    .project2ImageParent {
+        // flex-direction: column;
+        // justify-content: space-between;
+
+        .project2ImagesGrp1 {
+            flex-basis: 90%;
+            flex-direction: column-reverse;
+
+            .project2Image1Grp1 {
+                padding-top: 10px;
+            }
+        }
+
+        .project2ImagesGrp2 {
+            display: none;
+        }
+    }   
+
+    .contactForm {
+        .userDetails {
+            flex-direction: column;
+            
+            .userName,
+            .userEmail {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .headerContent {
+        margin-top: 50%;
+
+        h2 {
+            flex-wrap: wrap;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-top: 25px;
+        }
+    }
+
+    .aboutParent {
+        .aboutImage {
+            img {
+                width: 70%;
+            }
+        }
+        .aboutContent {
+            h4 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .powerSkills {
+        .skillsContent {
+            margin: 0 auto;
+
+            h4 {
+                font-size: 4rem;
+                margin: 0;
+            }
+
+            ul {
+                padding-left: 5%;
+            }
+        }
+    }
+
+    .experienceSkills {
+        h4 {
+
+            font-size: 4rem;
+            margin: 25px 0 0 0;
+        }
+    }
+
+    .websitesParent {
+        .websitesContent {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+
+    .websitesParent {
+        .websitesImages {
+            .website1,
+            .website2 {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .project1Parent {
+        .project1Content {
+            .project1Text {
+                h4 {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+            }
+        }
+
+        .project1MainImage {
+            img {
+                height: 300px;
+            }
+        }
+    }
+
+    .project2Parent {
+        .project2Content {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+
+    .contactParent {
+        h4 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        .contactChild {
+            border: 5px solid $tertiaryColor;
+            
+            ul {
+                text-align: center;
+
+                li {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
 }
