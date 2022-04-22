@@ -69,21 +69,25 @@
                 img {
                     height: 500px;
                 }
+
+                h5 {
+                    text-align: center;
+                }
             }
         }
     }
 
     .project1Parent {
-        flex-direction: column;
+        .project1Text {
+            h4 {
+                font-size: 5rem;
+            }
+        }
 
         .project1Content {
             flex-direction: row;
             justify-content: space-between;
             margin-right: 0;
-
-            .project1Text {
-                flex-basis: 50%;
-            }
 
             .project1SmImage {
                 flex-basis: 40%;
@@ -93,15 +97,16 @@
                     padding-left: 0;
                 }
             }
-        }
 
-        .project1MainImage {
-            flex-basis: 80%;
+            .project1MainImage {
+                flex-basis: 80%;
 
-            img {
-                margin: 25px auto;
-                height: 600px;
-                width: 90%;
+                img {
+                    margin: 25px auto;
+                    height: 600px;
+                    width: 90%;
+                    object-fit: contain;
+                }
             }
         }
     }
@@ -117,6 +122,7 @@
                 font-size: 5rem;
                 background-size: initial;
                 background-position: right;
+                margin-bottom: 25px;
             }
         }
     }
@@ -156,7 +162,6 @@
             text-align: center;
             font-size: 5rem;
             background-size: initial;
-            // background-position: right;
         }
 
         .contactChild {
@@ -197,34 +202,7 @@
 //     }
 // }
 
-
-@media (max-width: 800px) {
-
-    .wrapper {
-        width: 90%;
-    }
-
-    body {
-        font-size: 1.75rem;
-        line-height: 2.5rem;
-    }
-
-    .headerContent {
-        margin-top: 40%;
-
-        h2 {
-            font-size: 6rem;
-        }
-    }
-
-    .aboutParent {
-        .aboutContent {
-            h4 {
-                margin-bottom: 25px;
-            }
-        }
-    }
-
+@media (max-width: 900px) {
     .powerSkills {
         flex-direction: column;
 
@@ -271,6 +249,61 @@
         }
     }
 
+    .project1Parent {
+        .project1Text {
+            flex-basis: 90%;
+
+            h4 {
+                background-position: center;
+            }
+        }        
+
+        .project1Content {
+            text-align: center;
+
+            .project1SmImage {
+                display: none;
+            }
+
+            .project1MainImage {
+                margin: 0 auto;
+
+                img {
+                    margin: 0 auto;
+                }
+            }            
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    body {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .headerContent {
+        margin-top: 40%;
+
+        h2 {
+            font-size: 6rem;
+        }
+    }
+
+    .aboutParent {
+        .aboutContent {
+            h4 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
     .websitesParent {
         .websitesContent {
             text-align: center;
@@ -290,30 +323,6 @@
                 h5 {
                     text-align: center;
                 }
-            }
-        }
-    }
-
-    .project1Parent {
-        .project1Content {
-            text-align: center;
-
-            .project1Text {
-                flex-basis: 90%;
-
-                h4 {
-                    background-position: center;
-                }
-            }
-
-            .project1SmImage {
-                display: none;
-            }
-        }
-
-        .project1MainImage {
-            img {
-                margin: 0;
             }
         }
     }
@@ -503,18 +512,18 @@
     }
 
     .project1Parent {
-        .project1Content {
-            .project1Text {
-                h4 {
-                    font-size: 4rem;
-                    line-height: 5rem;
-                }
+        .project1Text {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
             }
         }
 
-        .project1MainImage {
-            img {
-                height: 300px;
+        .project1Content {
+            .project1MainImage {
+                img {
+                    height: 300px;
+                }
             }
         }
     }
