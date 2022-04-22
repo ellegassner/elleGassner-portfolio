@@ -1042,14 +1042,17 @@ header {
   .project2Parent .project2Content h4 {
     background-position: center;
     margin-bottom: 25px;
+    margin-top: 0;
   }
   .project2Parent .project2Content p {
     padding: 0 10px;
+    margin-bottom: 5%;
   }
 
   .project2ImageParent {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-top: 25px;
   }
   .project2ImageParent .project2ImagesGrp2 {
     margin-right: 0;

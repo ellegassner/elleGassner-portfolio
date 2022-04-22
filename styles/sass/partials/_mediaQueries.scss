@@ -332,16 +332,19 @@
             h4 {
                 background-position: center;
                 margin-bottom: 25px;
+                margin-top: 0;
             }
 
             p {
                 padding: 0 10px;
+                margin-bottom: 5%;
             }
         }
     }
 
     .project2ImageParent {
         justify-content: space-around;
+        margin-top: 25px;
 
         .project2ImagesGrp2 {
             margin-right: 0;
