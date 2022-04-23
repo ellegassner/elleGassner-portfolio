@@ -264,6 +264,7 @@ body {
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
+  margin: 25px 0 0 0;
 }
 h1 a {
   text-decoration: none;
@@ -349,7 +350,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navParent .mainNav .desktopNav {
+
+.mainNav .desktopNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,12 +360,12 @@ header {
           justify-content: space-between;
   padding-top: 10px;
 }
-.navParent .mainNav .desktopNav a {
+.mainNav .desktopNav a {
   text-decoration: none;
   color: #F6F6F6;
   margin-left: 25px;
 }
-.navParent .mainNav .dropdown {
+.mainNav .mobileNav .dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,16 +373,22 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10px 0 0 0;
   padding: 10px;
 }
-.navParent .mainNav .dropdown a {
+.mainNav .mobileNav .dropdown li {
+  background-color: #212121;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+.mainNav .mobileNav .dropdown li a {
   text-decoration: none;
   color: #F6F6F6;
-  margin-left: 25px;
 }
 
 .headerContent {
-  margin-top: 25%;
+  margin-top: 20%;
 }
 .headerContent h2 {
   margin-bottom: 0;
@@ -611,7 +619,6 @@ header {
   background-image: url(../assets/93812-[Converted].png);
   background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .project2ImageParent {
@@ -762,8 +769,14 @@ header {
   text-transform: uppercase;
   background: #212121;
   color: #F6F6F6;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #6D9886;
+}
+.contactForm .submitBtn:hover, .contactForm .submitBtn:focus, .contactForm .submitBtn:active {
+  cursor: pointer;
+  background-color: #F6F6F6;
+  color: #212121;
+  border: 3px solid #212121;
 }
 
 .footerParent {
@@ -788,7 +801,8 @@ header {
 }
 
 @media (max-width: 100vw) {
-  .navParent .mainNav .dropdown {
+  .mainNav .mobileNav .toggle,
+.mainNav .mobileNav .dropdown {
     display: none;
   }
 }
@@ -826,6 +840,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .websitesParent .websitesContent h4 {
     text-align: center;
@@ -894,12 +909,12 @@ header {
   }
   .project2Parent .project2Content {
     margin-left: 0;
+    text-align: center;
   }
   .project2Parent .project2Content h4 {
-    text-align: center;
     font-size: 5rem;
     background-size: initial;
-    background-position: right;
+    background-position: center;
     margin-bottom: 25px;
   }
 
@@ -916,6 +931,9 @@ header {
     height: 325px;
   }
 
+  .contactParent {
+    margin-top: 20%;
+  }
   .contactParent h4 {
     text-align: center;
     font-size: 5rem;
@@ -954,13 +972,15 @@ header {
   }
   .powerSkills .skillsContent {
     width: 90%;
+    margin: 0 auto;
   }
   .powerSkills .skillsContent h4 {
     text-align: center;
+    margin-left: 0;
   }
 
   .experienceSkills h4 {
-    margin: 0 5%;
+    margin: 5% 0 25px 0;
     text-align: center;
   }
   .experienceSkills .skillsIcons {
@@ -1019,9 +1039,6 @@ header {
     margin-bottom: 25px;
   }
 
-  .websitesParent .websitesContent {
-    text-align: center;
-  }
   .websitesParent .websitesImages {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1063,11 +1080,67 @@ header {
   }
 }
 @media (max-width: 600px) {
-  .navParent .mainNav .desktopNav {
+  .mainNav .desktopNav {
     display: none;
   }
-  .navParent .mainNav .dropdown {
-    display: block;
+  .mainNav .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainNav .mobileNav .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    color: #6D9886;
+    background-color: transparent;
+    font-size: 4rem;
+    border: none;
+    margin-top: 18px;
+  }
+  .mainNav .mobileNav .toggle:hover, .mainNav .mobileNav .toggle:focus, .mainNav .mobileNav .toggleactive {
+    cursor: pointer;
+    color: #F6F6F6;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .mainNav .mobileNav .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .mainNav .mobileNav .dropdown li {
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .mainNav .mobileNav .dropdown li:hover, .mainNav .mobileNav .dropdown li:focus, .mainNav .mobileNav .dropdown li:active, .mainNav .mobileNav .dropdown li:focus-within {
+    cursor: pointer;
+    background-color: #6D9886;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition: all 0.05s ease;
+    transition: all 0.05s ease;
+  }
+
+  .headerContent {
+    margin-top: 10%;
   }
 
   .aboutParent {
@@ -1103,10 +1176,6 @@ header {
   .project2ImageParent .project2ImagesGrp1 {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
   .project2ImageParent .project2ImagesGrp1 .project2Image1Grp1 {
     padding-top: 10px;
@@ -1127,9 +1196,20 @@ header {
   }
 }
 @media (max-width: 400px) {
-  .headerContent {
-    margin-top: 50%;
+  .navParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
+
+  .mainNav .mobileNav .toggle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .headerContent h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1172,7 +1252,7 @@ header {
 
   .websitesParent .websitesImages .website1 img,
 .websitesParent .websitesImages .website2 img {
-    height: 300px;
+    height: 400px;
   }
 
   .project1Parent .project1Text h4 {
@@ -1181,6 +1261,7 @@ header {
   }
   .project1Parent .project1Content .project1MainImage img {
     height: 300px;
+    width: 100%;
   }
 
   .project2Parent .project2Content h4 {

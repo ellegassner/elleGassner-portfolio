@@ -25,11 +25,16 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <ul class="dropdown">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <div class="mobileNav">
+                        <button onclick="toggleDropdown()" class="toggle" aria-label="navMenu">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav> <!-- nav ends -->
 
@@ -182,7 +187,7 @@
             <div class="contactParent wrapper">
                 <h4>Let's work together</h4>
                 <div class="contactChild">
-                    <form action="#" method="POST" class="contactForm" name="contactForm">
+                    <form action="mailto:elle.a.gassner@gmail.com" method="POST" enctype="multipart/form-data" class="contactForm" name="contactForm">
                         <div class="userDetails">
                             <div class="userName">
                                 <label for="userName">Name</label>
@@ -226,5 +231,9 @@
             <p>Created by Elle Gassner</p>
             <a class="paintSwatchCredits" href='https://www.freepik.com/vectors/paint-swatch'>Paint swatch vector created by rawpixel.com - www.freepik.com</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
