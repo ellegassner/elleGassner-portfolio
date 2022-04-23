@@ -8,36 +8,46 @@ header {
 .navParent {
     display: flex;
     justify-content: space-between;
+}
     
-    .mainNav {
-        .desktopNav {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10px;
+.mainNav {
+    .desktopNav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
 
-            a {
-                text-decoration: none;
-                color: $primaryColor;
-                margin-left: 25px;
-            }
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            margin-left: 25px;
         }
+    }
 
+    .mobileNav {
         .dropdown {
             display: flex;
             flex-direction: column;
+            margin: 10px 0 0 0;
             padding: 10px;
 
-            a {
-                text-decoration: none;
-                color: $primaryColor;
-                margin-left: 25px;
+            li {
+                background-color: $secondaryColor;
+                padding: 15px; 
+                margin: 0;
+                text-align: center;
+
+                    a {
+                    text-decoration: none;
+                    color: $primaryColor;   
+                    }
             }
         }
-    } 
-}
+    }
+} 
+
 
     .headerContent {
-        margin-top: 25%;
+        margin-top: 20%;
 
         h2 {
             margin-bottom: 0;
@@ -250,7 +260,6 @@ header {
             background-image: url(../assets/93812-[Converted].png);
             background-position: left;
             background-repeat: no-repeat;
-            background-size: cover;
         }
     }
 }
@@ -382,8 +391,16 @@ header {
         text-transform: uppercase;
         background: $secondaryColor;
         color: $primaryColor;
-        padding: 5px;
+        padding: 8px;
         border: 1px solid $tertiaryColor;
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+            background-color: $primaryColor;
+            color: $secondaryColor;
+            border: 3px solid $secondaryColor;
+        }
     }
 }
 
