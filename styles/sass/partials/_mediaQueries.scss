@@ -1,0 +1,607 @@
+@media (max-width: 100vw) {
+    .mainNav {
+        .mobileNav {
+            .toggle,
+            .dropdown {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .headerContent {
+        margin-top: 30%;
+        
+        h2{
+            font-size: 8rem;
+            line-height: 7.25rem;
+        }
+
+        h3 {
+            font-size: 2.75rem;
+        }
+    }
+
+    .aboutParent {
+        .aboutContent {
+            margin-left: 5%;
+
+            h4 {
+                margin-top: 0;
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .powerSkills {
+        .skillsImage {
+            img {
+                height: 300px;
+                width: 550px;
+            }
+        }
+    }
+
+    .websitesParent {
+        flex-direction: column;
+        text-align: center;
+
+        .websitesContent {
+            h4 {
+                text-align: center;
+                font-size: 5rem;
+                background-size: initial;
+                background-position: right;
+            }
+        }
+
+        .websitesImages {
+            justify-content: space-evenly;
+
+            .website1,
+            .website2 {
+                margin-top: 25px;
+                flex-basis: 38%;
+
+                img {
+                    height: 500px;
+                }
+
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .project1Parent {
+        .project1Text {
+            h4 {
+                font-size: 5rem;
+            }
+        }
+
+        .project1Content {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0;
+
+            .project1SmImage {
+                flex-basis: 40%;
+
+                img {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+            .project1MainImage {
+                flex-basis: 80%;
+
+                img {
+                    margin: 25px auto;
+                    height: 600px;
+                    width: 90%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .project2Parent {
+        flex-direction: column-reverse;
+
+        .project2Content {
+            margin-left: 0;
+            text-align: center;
+
+            h4 {
+                font-size: 5rem;
+                background-size: initial;
+                background-position: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .project2ImageParent {
+        .project2ImagesGrp1 {
+            .project2Image1Grp1 {
+                img {
+                    height: 275px;
+                }
+            }
+
+            .project2Image2Grp1 {
+                img {
+                    height: 325px;
+                }
+            }
+        }
+
+        .project2ImagesGrp2 {
+            .project2Image1Grp2 {
+                img {
+                    height: 275px;
+                }
+            }
+
+            .project2Image2Grp2 {
+                img {
+                    height: 325px;
+                }
+            }
+        }
+    }
+
+    .contactParent {
+        margin-top: 20%;
+
+        h4 {
+            text-align: center;
+            font-size: 5rem;
+            background-size: initial;
+        }
+
+        .contactChild {
+            flex-direction: column;
+
+            ul {
+                padding-top: 50px;
+                text-align: right;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .contactForm {
+        .submitBtn {
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+@media (max-width: 900px) {
+    .powerSkills {
+        flex-direction: column;
+
+        .skillsImage {
+            img {
+                width: 100vw;
+            }
+        }
+
+        .skillsContent {
+            width: 90%;
+            margin: 0 auto;
+
+            h4 {
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .experienceSkills {
+        h4 {
+            margin: 5% 0 25px 0;
+            text-align: center;
+        }
+
+        .skillsIcons {
+            font-size: 3rem;
+
+            ul {
+                padding: 8% 0;
+            }
+        }
+    }
+
+    .experienceSkills li {
+        &:hover,
+        &:active,
+        &:focus {
+            font-size: 4rem;
+
+            .iconsTransform {
+                font-size: 1.25rem;
+                bottom: -30px;
+            }
+        }
+    }
+
+    .project1Parent {
+        .project1Text {
+            flex-basis: 90%;
+
+            h4 {
+                background-position: center;
+            }
+        }        
+
+        .project1Content {
+            text-align: center;
+
+            .project1SmImage {
+                display: none;
+            }
+
+            .project1MainImage {
+                margin: 0 auto;
+
+                img {
+                    margin: 0 auto;
+                }
+            }            
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    body {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .headerContent {
+        margin-top: 40%;
+
+        h2 {
+            font-size: 6rem;
+        }
+    }
+
+    .aboutParent {
+        .aboutContent {
+            h4 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .websitesParent {
+        // .websitesContent {
+        //     text-align: center;
+        // }
+        
+        .websitesImages {
+            flex-direction: column;
+
+            .website1,
+            .website2 {
+                img {
+                    height: 600px;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .project2Parent {
+        .project2Content {
+            h4 {
+                background-position: center;
+                margin-bottom: 25px;
+                margin-top: 0;
+            }
+
+            p {
+                padding: 0 10px;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .project2ImageParent {
+        justify-content: space-around;
+        margin-top: 25px;
+
+        .project2ImagesGrp2 {
+            margin-right: 0;
+        }
+    }
+
+    .contactParent {
+        h4 {
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .mainNav {
+        .desktopNav {
+            display: none;
+        }
+
+        .mobileNav {
+            display: flex;
+            flex-direction: column;
+
+            
+            .toggle {
+                display: flex;
+                justify-content: right;
+                color: $tertiaryColor;
+                background-color: transparent;
+                font-size: 4rem;
+                border: none;
+                margin-top: 18px;
+                &:hover,
+                &:focus,
+                &active {
+                    cursor: pointer;
+                    color: $primaryColor;
+                    transition: 0.5s;
+                    transition: all 0.5s ease;
+                }
+            }
+
+            .dropdown {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                li {
+                    visibility: hidden;
+                    transition: 0.5s;
+                    transition: all 0.5s ease;
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &:focus-within {
+                        cursor: pointer;
+                        background-color: $tertiaryColor;
+                        transition: 0.5s;
+                        transition: all .05s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    .headerContent {
+        margin-top: 10%;
+    }
+
+    .aboutParent {
+        flex-direction: column;
+        text-align: center;
+        margin: 10% auto;
+
+
+        .aboutImage {
+            img {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .aboutContent {
+            margin-left: 0;
+
+            h4 {
+                background-position: center;
+            }
+        }
+    }
+
+    .websitesParent {
+        .websitesContent {
+            h4 {
+                background-position: center;
+            }
+        }
+    }
+
+    .project1Parent {
+        .project1MainImage {
+            margin: 0;
+
+            img {
+                height: 400px;
+            }
+        }
+    }
+
+    .project2ImageParent {
+        // flex-direction: column;
+        // justify-content: space-between;
+
+        .project2ImagesGrp1 {
+            flex-basis: 90%;
+            // flex-direction: column-reverse;
+
+            .project2Image1Grp1 {
+                padding-top: 10px;
+            }
+        }
+
+        .project2ImagesGrp2 {
+            display: none;
+        }
+    }   
+
+    .contactForm {
+        .userDetails {
+            flex-direction: column;
+            
+            .userName,
+            .userEmail {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .navParent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainNav{
+        .mobileNav {
+            .toggle {
+                justify-content: center;
+            }
+        }
+    }
+
+    .headerContent {
+        h2 {
+            flex-wrap: wrap;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-top: 25px;
+        }
+    }
+
+    .aboutParent {
+        .aboutImage {
+            img {
+                width: 70%;
+            }
+        }
+        .aboutContent {
+            h4 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .powerSkills {
+        .skillsContent {
+            margin: 0 auto;
+
+            h4 {
+                font-size: 4rem;
+                margin: 0;
+            }
+
+            ul {
+                padding-left: 5%;
+            }
+        }
+    }
+
+    .experienceSkills {
+        h4 {
+
+            font-size: 4rem;
+            margin: 25px 0 0 0;
+        }
+    }
+
+    .websitesParent {
+        .websitesContent {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+
+    .websitesParent {
+        .websitesImages {
+            .website1,
+            .website2 {
+                img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .project1Parent {
+        .project1Text {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+
+        .project1Content {
+            .project1MainImage {
+                img {
+                    height: 300px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .project2Parent {
+        .project2Content {
+            h4 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+
+    .contactParent {
+        h4 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        .contactChild {
+            border: 5px solid $tertiaryColor;
+            
+            ul {
+                text-align: center;
+
+                li {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

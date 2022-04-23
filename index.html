@@ -4,14 +4,254 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/1296eacb3d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Elle's Portfolio</title>
 </head>
 <body>
-    <iframe src="https://giphy.com/embed/yoJC2A59OCZHs1LXvW" width="1440 " height="807" frameBorder="0" class="giphy-embed"
-        allowFullScreen></iframe>
-    <p><a href="https://giphy.com/gifs/hi-well-hello-there-whale-yoJC2A59OCZHs1LXvW">via GIPHY</a></p>
-    <h1>Thanks for checking out my portfolio!</h1>
-    <h2>Currently, under construction - please come back soon!</h2>
+    <header>
+        <a href="#about" class="skipLink">Skip to About</a>
+        <div class="wrapper">
+            <nav class="navParent">
+                <h1><a href="./index.html">elle</a></h1>
+                <div class="mainNav">
+                    <ul class="desktopNav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="mobileNav">
+                        <button onclick="toggleDropdown()" class="toggle" aria-label="navMenu">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <!-- nav ends -->
+
+            <div class="headerContent">
+                <h2>Create with Intention</h2>
+                <h3>Front end web developer</h3>
+            </div> <!-- header content ends -->
+        </div> <!-- wrapper ends -->
+    </header>
+
+    <main> 
+        <section class="about" id="about">
+            <div class="aboutParent wrapper">
+                <div class="aboutImage">
+                    <img src="./assets/elleGassnerAboutImage.jpg" alt="A blond girl sitting on a chair, smiling, with a green plant behind her.">
+                </div> <!-- aboutImage ends -->
+
+                <div class="aboutContent">
+                    <h4>About.</h4>
+                    <p>Hello! I’m a front-end developer who has experience as an entrepreneur, designer, and photographer. After building
+                    websites on various platforms for different companies, my curiosity led me to discover the powerful world of writing
+                    code.
+                    <br>
+                    <br>
+                    As my diverse background can show, I am a self-titled “Renaissance Woman”, which essentially means I like to do a little
+                    bit of everything - however nothing beats walking in the woods with my two dogs, followed by a craft beer on a sunny
+                    patio!</p>
+                </div> <!-- aboutContent ends -->
+            </div> <!-- wrapper ends -->
+        </section> <!-- about section ends -->
+
+        <section class="skills">
+            <div class="powerSkills">
+                <div class="skillsImage">
+                    <img src="./assets/elleGassnerIceFieldsImage.png" alt="Woman in gold sweater, working at a laptop.">
+                    <!-- Photo by <a
+                                    href="https://unsplash.com/@christinhumephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christin
+                                    Hume</a> on <a
+                                    href="https://unsplash.com/s/photos/working-woman-hands-with-laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                </div>
+                <div class="skillsContent wrapper">
+                    <h4>Power Skills.</h4>
+                    <ul>
+                        <li>Adaptable to ever-changing environments</li>
+                        <li>Solver of complex problems</li>
+                        <li>Confident self-starter</li>
+                        <li>Excellent attention to detail</li>
+                        <li>Team Player (I've got a big heart!)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experienceSkills">
+                <h4>Experience with.</h4>
+                <div class="skillsIcons">
+                    <ul class="wrapper">
+                        <li><i class="devicon-html5-plain" aria-hidden="true"><span class="iconsTransform">HTML5</span></i></li>
+                        <span class="sr-only">html5</span>
+                        <li><i class="devicon-css3-plain" aria-hidden="true"><span class="iconsTransform">CSS3</span></i></li>
+                        <span class="sr-only">css3</span>
+                        <li><i class="devicon-sass-original" aria-hidden="true"><span class="iconsTransform">Sass</span></i></li>
+                        <span class="sr-only">sass</span>
+                        <li><i class="devicon-javascript-plain" aria-hidden="true"><span class="iconsTransform">JavaScript</span></i></li>
+                        <span class="sr-only">javascript</span>
+                        <li><i class="devicon-react-original" aria-hidden="true"><span class="iconsTransform">React</span></i></li>
+                        <span class="sr-only">react</span>
+                        <li><i class="devicon-vscode-plain" aria-hidden="true"><span class="iconsTransform">VSCode</span></i></li>
+                        <span class="sr-only">vscode</span>
+                        <li><i class="devicon-firebase-plain" aria-hidden="true"><span class="iconsTransform">Firebase</span></i></li>
+                        <span class="sr-only">firebase</span>
+                    </ul>
+                    <ul class="wrapper">
+                        <li><i class="devicon-illustrator-plain" aria-hidden="true"><span class="iconsTransform">Illustrator</span></i></li>
+                        <span class="sr-only">illustrator</span>
+                        <li><i class="devicon-git-plain" aria-hidden="true"><span class="iconsTransform">Git</span></i></li>
+                        <span class="sr-only">git</span>
+                        <li><i class="devicon-photoshop-plain" aria-hidden="true"><span class="iconsTransform">Photoshop</span></i></li>
+                        <span class="sr-only">photoshop</span>
+                        <li><i class="devicon-jquery-plain" aria-hidden="true"><span class="iconsTransform">jQuery</span></i></li>
+                        <span class="sr-only">jquery</span>
+                        <li><i class="devicon-google-plain" aria-hidden="true"><span class="iconsTransform">Analytics</span></i></li>
+                        <span class="sr-only">google analytics</span>
+                        <li><i class="devicon-wordpress-plain" aria-hidden="true"><span class="iconsTransform">Wordpress</span></i></li>
+                        <span class="sr-only">wordpress</span>
+                        <li><i class="devicon-canva-original" aria-hidden="true"><span class="iconsTransform">Canva</span></i></li>
+                        <span class="sr-only">canva</span>
+                    </ul> 
+                </div> <!-- skillsIcons ends -->
+            </div> <!-- experienceSkills + wrapper ends-->
+        </section> <!-- skills section ends -->
+
+        <section class="projects" id="projects">
+            <div class="websitesParent">
+                <div class="websitesContent wrapper">
+                    <h4>Responsive Websites</h4>
+                    <p>These two projects are pixel-perfect renditions of photoshop designs provided by Juno College of Technology. Both are
+                    built to be semantically accessible and responsive for all users.
+                    <br>
+                    <br>
+                    HTML | CSS | SCSS | JS</p>
+                </div><!-- websitesContent + wrapper ends -->
+                <div class="websitesImages">
+                    <div class="website1">
+                        <div class="website1Image">
+                            <a href="https://reliable-manatee-995f8a.netlify.app/"><img src="./assets/elleGassnerAroraFullImage.png" alt="Full size image of a psd conversion website, showcasing a jewelry shop."></a>
+                        </div>
+                        <h5>Arora</h5>
+                    </div> <!-- website1 ends -->
+                    <div class="website2">
+                        <div class="website2Image">
+                            <a href="https://heuristic-archimedes-c39059.netlify.app/"><img src="./assets/elleGassnerBeachstayFullImage.png" alt="Full size image of a psd conversion website, showing a beach vacation location."></a>
+                        </div>
+                        <h5>Beachstay</h5>
+                    </div> <!-- website2 ends -->
+                </div> <!-- websitesImages ends -->
+            </div> <!-- websitesParent ends -->
+
+            <div class="project1Parent wrapper">
+                <div class="project1Text">
+                    <h4>Find Your New Best Friend</h4>
+                    <p>Web application utilizing The Dog API to gather information on a random dog, such as temperament, life span and what
+                    they were bred for.
+                    <br>
+                    <br>
+                    HTML5 | CSS3 | jQuery</p>
+                </div>
+                <div class="project1Content">
+                    <div class="project1SmImage">
+                        <a href="https://tourmaline-dodol-c60bc1.netlify.app/"><img src="./assets/elleGassnerBestFriendMobileImage.png" alt="Photo of a random dog finder app with phone picture surrounding it, to communicate that it's a mobile friendly design."></a>
+                    </div> <!-- appProject1SmImage ends -->
+                    <div class="project1MainImage">
+                        <a href="https://tourmaline-dodol-c60bc1.netlify.app/"><img src="./assets/elleGassnerBestFriendWebImage.png" alt="Full photo of random dog finder app."></a>
+                    </div> <!-- appProject1MainImage ends -->
+                </div> <!-- appProject1Content ends -->
+
+            </div> <!-- appProject1Parent  + wrapper ends -->
+        
+            <div class="project2Parent wrapper">
+                <div class="project2ImageParent">
+                    <div class="project2ImagesGrp1">
+                        <div class="project2Image1Grp1">
+                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaSmImage1.png" alt="Photo of front page of movie trivia app."></a>
+                        </div>
+                        <div class="project2Image2Grp1">
+                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaLgImage1.png" alt="Photo of the quiz layout on a movie trivia app."></a>
+                        </div>
+                    </div> <!-- project2ImagesGrp1 ends -->
+                    <div class="project2ImagesGrp2">
+                        <div class="project2Image2Grp2">
+                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaLgImage2.png" alt="Photo of the quiz results and layout on a movie trivia app."></a>
+                        </div>
+                        <div class="project2Image1Grp2">
+                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaDevImage.png" alt="Photo of the movie trivia app's developers page."></a>
+                        </div>
+                    </div> <!-- project2ImagesGrp2 ends -->
+                </div>
+                <div class="project2Content">
+                    <h4>Movie Trivia</h4>
+                    <p>Web application utilizing the TMDb API to create a movie trivia game, where the user has to guess the release date for
+                    each movie shown. Paired project with Theo Mitchell at Juno College of Technology.
+                    <br>
+                    <br>
+                    HTML5 | CSS3 | SCSS | JavaScript</p>
+                </div> <!-- project2Content ends -->
+            </div> <!-- project2Parent + wrapper ends -->
+        </section> <!-- projects section ends -->
+
+        <section class="contact" id="contact">
+            <div class="contactParent wrapper">
+                <h4>Let's work together</h4>
+                <div class="contactChild">
+                    <form action="mailto:elle.a.gassner@gmail.com" method="POST" enctype="multipart/form-data" class="contactForm" name="contactForm">
+                        <div class="userDetails">
+                            <div class="userName">
+                                <label for="userName">Name</label>
+                                <input type="text" id="userName">
+                            </div>
+                            <div class="userEmail">
+                                <label for="userEmail">Email</label>
+                                <input type="email" id="userEmail">
+                            </div>
+                        </div>
+                        <div class="userMessage">
+                            <label for="userMessage">Message</label>
+                            <textarea name="userMessage" id="userMessage" cols="44" rows="10"></textarea>
+                        </div>
+                        <input class="submitBtn" type="submit" value="Send Message!">
+                    </form> <!-- form ends -->
+                    <div class="contactInfo">
+                        <ul>
+                            <li>Squamish, BC</li>
+                            <li>604-441-8815</li>
+                            <li>elle.a.gassner@gmail.com</li>
+                        </ul>
+                    </div> <!-- contactInfo ends -->
+                </div> <!-- contactChild ends -->
+                <ul class="socialIcons">
+                    <li><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to GitHub</span>
+                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to LinkedIn</span>
+                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to Twitter</span>
+                </ul> <!-- socialIcons ends -->
+            </div> <!-- contactParent + wrapper ends -->
+        </section> <!-- contact section ends -->
+    </main>
+
+    <footer>
+        <div class="footerParent">
+            <a class="toTop" href="./index.html"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></a>
+            <span class="sr-only">Link to Top</span>
+            <p>Created by Elle Gassner</p>
+            <a class="paintSwatchCredits" href='https://www.freepik.com/vectors/paint-swatch'>Paint swatch vector created by rawpixel.com - www.freepik.com</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

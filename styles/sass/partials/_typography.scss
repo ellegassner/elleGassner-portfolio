@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    letter-spacing: 1.5px;
+    color: $secondaryColor;
+    background-color: $primaryColor;
+}
+
+.skipLink {
+    position: absolute;
+    left: -500px;
+    top: 5px;
+    z-index: 90;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    &:focus {
+        left: 0;
+    }
+}
+
+h1 {
+    font-family: $styleFont;
+    font-size: 4rem;
+    margin: 25px 0 0 0;
+    
+    a {
+        text-decoration: none;
+        text-transform: lowercase;
+        letter-spacing: .5px;
+        color: $primaryColor;
+    }
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.mainNav li {
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+    color: $primaryColor;
+}
+
+h2 {
+    font-family: $styleFont;
+    font-size: 9rem;
+    font-weight: 300;
+    line-height: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primaryColor;
+}
+
+h3 {
+    font-size: 3.75rem;
+    font-weight: 500;
+    line-height: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $tertiaryColor;
+}
+
+h4 {
+    font-family: $styleFont;
+    font-size: 6.5rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    color: $secondaryColor;
+}
+
+h5 {
+    font-family: $styleFont;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: $secondaryColor;
+}
+
+
+

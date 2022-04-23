@@ -1,0 +1,427 @@
+header {
+    height: 100vh;
+    background-image: url(../assets/elleGassnerHomeBgImage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navParent {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.mainNav {
+    .desktopNav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            margin-left: 25px;
+        }
+    }
+
+    .mobileNav {
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0 0;
+            padding: 10px;
+
+            li {
+                background-color: $secondaryColor;
+                padding: 15px; 
+                margin: 0;
+                text-align: center;
+
+                    a {
+                    text-decoration: none;
+                    color: $primaryColor;   
+                    }
+            }
+        }
+    }
+} 
+
+
+    .headerContent {
+        margin-top: 20%;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+
+
+
+.aboutParent {
+    margin: 10%;
+    display: flex;
+
+    .aboutImage {
+        flex-basis: 35%;
+    }
+
+    .aboutContent {
+        flex-basis: 50%;
+        margin-left: 10%;
+
+        h4 {
+            text-transform: none;
+            background-image: url(../assets/93812-[Converted].png);
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.powerSkills {
+    display: flex;
+
+    .skillsImage {
+        flex-basis: 50%;
+
+        img {
+            height: 400px;
+            width: 700px;
+            object-fit: cover;
+        }
+    }
+
+    .skillsContent {
+        flex-basis: 45%;
+        margin-left: 25px;
+
+        h4 {
+            font-size: 5rem;
+            text-transform: none;
+            margin: 25px 0 50px 25px;
+        }
+
+        ul {
+            list-style-type: ">";
+            
+            li {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+    
+.experienceSkills {
+
+    h4 {
+        font-size: 5rem;
+        text-transform: none;
+        margin: 25px 0 25px 10%;
+    }
+    .skillsIcons {
+        font-size: 4rem;
+        background: $tertiaryColor;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 5% 0;
+        }
+    }
+}
+
+.iconsTransform {
+    display: none;    
+}
+
+.experienceSkills li {
+        color: $primaryColor;
+        position: relative;
+
+        &:hover,
+        &:active,
+        &:focus {
+            font-size: 6rem;
+            transition: all .5s ease-in-out;
+
+            .iconsTransform {
+                display: block;
+                font-size: 2rem;
+                position: absolute;
+                bottom: -40px;
+                left: 1px;
+                transition: all .5s ease-in-out;
+            }
+        }
+}
+
+
+.websitesParent {
+    display: flex;
+
+    .websitesContent {
+        flex-basis: 30%;
+
+        h4 {
+            background-image: url(../assets/93812-[Converted].png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .websitesImages {
+        flex-basis: 50%;
+        display: flex;
+
+        .website1,
+        .website2 {
+            flex-basis: 50%;
+
+            img {
+                height: 700px;
+                object-fit: contain;
+            }
+
+            h5 {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+.project1Parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10% auto;
+
+    .project1Text {
+        text-align: center;
+            h4 {
+                margin: 10px 0 25px 0px;
+                background-image: url(../assets/93812-[Converted].png);
+                background-position: left;
+                background-repeat: no-repeat;
+            }
+
+            p {
+                margin-bottom: 25px;
+            }
+    }
+
+    .project1Content {
+        display: flex;
+
+        .project1SmImage {
+            flex-basis: 40%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 80%;
+                object-fit: cover;
+                padding-left: 5%;
+            }
+        }
+
+        .project1MainImage {
+        flex-basis: 30%;
+
+            img {
+                width: auto;
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.project2Parent {
+    display: flex;
+
+    .project2Content {
+        flex-basis: 45%;
+        margin-left: 30px;
+
+        h4 {
+            background-image: url(../assets/93812-[Converted].png);
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+.project2ImageParent {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: space-between;
+
+    .project2ImagesGrp1 {
+        flex-basis: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .project2Image1Grp1 {
+            img {
+                height: 200px;
+                object-fit: cover;
+                margin-bottom: 15px;
+                
+            }
+        }
+
+        .project2Image2Grp1 {
+            img {
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .project2ImagesGrp2 {
+        flex-basis: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        justify-content: space-between;
+
+        .project2Image1Grp2 {
+            img {
+                height: 200px;
+                object-fit: cover;
+                margin-bottom: 0px;
+                
+            }
+        }
+
+        .project2Image2Grp2 {
+            img {
+                height: 400px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+.contactParent {
+    margin-top: 10%;
+
+    h4 {
+        background-image: url(../assets/93812-[Converted].png);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    .contactChild {
+        display: flex;
+        border: 10px solid $tertiaryColor;
+        padding: 15px;
+        justify-content: space-between;
+
+        ul {
+            padding: 200px 0 0 0;
+            list-style-type: ">";
+
+            li {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+
+        a {
+            font-size: 3rem;
+            padding: 5px;
+            color: $tertiaryColor;
+        }
+    }
+}
+
+
+.contactForm {
+    flex-basis: 60%;
+
+    .userDetails {
+        display: flex;
+        justify-content: space-between;
+    
+        .userName,
+        .userEmail {
+            flex-basis: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .userMessage {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    .submitBtn {
+        font-family: $styleFont;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        background: $secondaryColor;
+        color: $primaryColor;
+        padding: 8px;
+        border: 3px solid $tertiaryColor;
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+            background-color: $primaryColor;
+            color: $secondaryColor;
+            border: 3px solid $secondaryColor;
+        }
+    }
+}
+
+.footerParent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+
+    .toTop {
+        color: $tertiaryColor;
+        font-size: 3rem;
+    }
+
+    .paintSwatchCredits {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $secondaryColor;
+    }
+}
+
+
+
+
