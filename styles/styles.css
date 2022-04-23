@@ -770,7 +770,7 @@ header {
   background: #212121;
   color: #F6F6F6;
   padding: 8px;
-  border: 1px solid #6D9886;
+  border: 3px solid #6D9886;
 }
 .contactForm .submitBtn:hover, .contactForm .submitBtn:focus, .contactForm .submitBtn:active {
   cursor: pointer;
