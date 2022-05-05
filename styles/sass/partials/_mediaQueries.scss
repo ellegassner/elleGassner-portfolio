@@ -9,6 +9,12 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .experienceSkills {
+        height: 500px;
+    }
+}
+
 @media (max-width: 1150px) {
     .wrapper {
         width: 85%;
@@ -450,6 +456,10 @@
         }
     }
 
+    .experienceSkills {
+        height: 450px;
+    }
+
     .websitesParent {
         .websitesContent {
             h4 {
@@ -529,6 +539,10 @@
             margin-top: 25px;
         }
     }
+
+    .experienceSkills {
+        height: 400px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -561,6 +575,8 @@
     }
 
     .experienceSkills {
+        height: 350px;
+
         h4 {
 
             font-size: 4rem;
@@ -632,5 +648,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 350px) {
+    .experienceSkills {
+        height: 300px;
     }
 }
