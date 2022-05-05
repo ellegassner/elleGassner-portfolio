@@ -340,6 +340,7 @@ header {
   background-image: url(../assets/elleGassnerHomeBgImage.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .navParent {
@@ -402,6 +403,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .aboutParent .aboutImage {
   -ms-flex-preferred-size: 35%;
@@ -447,12 +451,12 @@ header {
 .powerSkills .skillsContent {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  margin-left: 25px;
+  margin: 0 0 5% 15px;
 }
 .powerSkills .skillsContent h4 {
   font-size: 5rem;
   text-transform: none;
-  margin: 25px 0 50px 25px;
+  margin: 0 0 15px 25px;
 }
 .powerSkills .skillsContent ul {
   list-style-type: ">";
@@ -461,14 +465,18 @@ header {
   padding-left: 15px;
 }
 
+.experienceSkills {
+  background: #6D9886;
+  height: 600px;
+  margin-top: 5%;
+}
 .experienceSkills h4 {
   font-size: 5rem;
   text-transform: none;
-  margin: 25px 0 25px 10%;
+  margin: 25px 0 10px 10%;
 }
 .experienceSkills .skillsIcons {
   font-size: 4rem;
-  background: #6D9886;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +484,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 5%;
 }
 .experienceSkills .skillsIcons ul {
   display: -webkit-box;
@@ -489,25 +498,30 @@ header {
 
 .iconsTransform {
   display: none;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 0;
 }
 
 .experienceSkills li {
   color: #F6F6F6;
   position: relative;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .experienceSkills li:hover, .experienceSkills li:active, .experienceSkills li:focus {
-  font-size: 6rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  font-size: 5rem;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 .experienceSkills li:hover .iconsTransform, .experienceSkills li:active .iconsTransform, .experienceSkills li:focus .iconsTransform {
   display: block;
-  font-size: 2rem;
   position: absolute;
   bottom: -40px;
   left: 1px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .websitesParent {
@@ -542,6 +556,7 @@ header {
   height: 700px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-top: 25px;
 }
 .websitesParent .websitesImages .website1 h5,
 .websitesParent .websitesImages .website2 h5 {
@@ -577,6 +592,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .project1Parent .project1Content .project1SmImage {
   -ms-flex-preferred-size: 40%;
@@ -708,6 +726,7 @@ header {
 }
 .contactParent .contactChild ul li {
   padding-left: 15px;
+  font-size: 1.5rem;
 }
 .contactParent .socialIcons {
   display: -webkit-box;
@@ -764,18 +783,16 @@ header {
   resize: none;
 }
 .contactForm .submitBtn {
-  font-family: "Cormorant Garamond", serif;
   font-size: 2.5rem;
   text-transform: uppercase;
-  background: #212121;
+  background: #6D9886;
   color: #F6F6F6;
-  padding: 8px;
+  padding: 10px;
   border: 3px solid #6D9886;
 }
 .contactForm .submitBtn:hover, .contactForm .submitBtn:focus, .contactForm .submitBtn:active {
   cursor: pointer;
-  background-color: #F6F6F6;
-  color: #212121;
+  background-color: #212121;
   border: 3px solid #212121;
 }
 
@@ -806,6 +823,11 @@ header {
     display: none;
   }
 }
+@media (max-width: 1400px) {
+  .experienceSkills {
+    height: 500px;
+  }
+}
 @media (max-width: 1150px) {
   .wrapper {
     width: 85%;
@@ -826,8 +848,12 @@ header {
     margin-left: 5%;
   }
   .aboutParent .aboutContent h4 {
-    margin-top: 0;
+    margin: 0 0 25px 0;
     font-size: 5rem;
+    line-height: 6.5rem;
+  }
+  .aboutParent .aboutContent p {
+    font-size: 1.8rem;
   }
 
   .powerSkills .skillsImage img {
@@ -845,6 +871,7 @@ header {
   .websitesParent .websitesContent h4 {
     text-align: center;
     font-size: 5rem;
+    line-height: 6.5rem;
     background-size: initial;
     background-position: right;
   }
@@ -870,6 +897,7 @@ header {
 
   .project1Parent .project1Text h4 {
     font-size: 5rem;
+    line-height: 6.5rem;
   }
   .project1Parent .project1Content {
     -webkit-box-orient: horizontal;
@@ -913,6 +941,7 @@ header {
   }
   .project2Parent .project2Content h4 {
     font-size: 5rem;
+    line-height: 6.5rem;
     background-size: initial;
     background-position: center;
     margin-bottom: 25px;
@@ -937,6 +966,7 @@ header {
   .contactParent h4 {
     text-align: center;
     font-size: 5rem;
+    line-height: 6.5rem;
     background-size: initial;
   }
   .contactParent .contactChild {
@@ -961,6 +991,23 @@ header {
   }
 }
 @media (max-width: 900px) {
+  .aboutParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutParent .aboutImage img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .aboutParent .aboutContent {
+    text-align: center;
+  }
+  .aboutParent .aboutContent h4 {
+    background-position: center;
+  }
+
   .powerSkills {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1162,15 +1209,23 @@ header {
     background-position: center;
   }
 
+  .experienceSkills {
+    height: 450px;
+  }
+
   .websitesParent .websitesContent h4 {
     background-position: center;
   }
 
-  .project1Parent .project1MainImage {
-    margin: 0;
+  .project1Parent .project1Content .project1SmImage {
+    display: block;
+    margin: 0 auto;
   }
-  .project1Parent .project1MainImage img {
+  .project1Parent .project1Content .project1SmImage img {
     height: 400px;
+  }
+  .project1Parent .project1Content .project1MainImage {
+    display: none;
   }
 
   .project2ImageParent .project2ImagesGrp1 {
@@ -1195,7 +1250,7 @@ header {
     padding-top: 5px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1215,6 +1270,7 @@ header {
         flex-wrap: wrap;
     font-size: 5rem;
     line-height: 6rem;
+    margin-top: 25px;
   }
   .headerContent h3 {
     font-size: 2.5rem;
@@ -1222,6 +1278,11 @@ header {
     margin-top: 25px;
   }
 
+  .experienceSkills {
+    height: 400px;
+  }
+}
+@media (max-width: 400px) {
   .aboutParent .aboutImage img {
     width: 70%;
   }
@@ -1240,6 +1301,9 @@ header {
     padding-left: 5%;
   }
 
+  .experienceSkills {
+    height: 350px;
+  }
   .experienceSkills h4 {
     font-size: 4rem;
     margin: 25px 0 0 0;
@@ -1281,5 +1345,10 @@ header {
   }
   .contactParent .contactChild ul li {
     padding-left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .experienceSkills {
+    height: 300px;
   }
 }

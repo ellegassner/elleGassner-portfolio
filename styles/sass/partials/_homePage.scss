@@ -3,6 +3,7 @@ header {
     background-image: url(../assets/elleGassnerHomeBgImage.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .navParent {
@@ -38,7 +39,7 @@ header {
 
                     a {
                     text-decoration: none;
-                    color: $primaryColor;   
+                    color: $primaryColor; 
                     }
             }
         }
@@ -59,10 +60,10 @@ header {
     }
 
 
-
 .aboutParent {
     margin: 10%;
     display: flex;
+    align-items: center;
 
     .aboutImage {
         flex-basis: 35%;
@@ -101,12 +102,12 @@ header {
 
     .skillsContent {
         flex-basis: 45%;
-        margin-left: 25px;
+        margin: 0 0 5% 15px;
 
         h4 {
             font-size: 5rem;
             text-transform: none;
-            margin: 25px 0 50px 25px;
+            margin: 0 0 15px 25px;
         }
 
         ul {
@@ -119,19 +120,22 @@ header {
     }
 }
 
-    
+
 .experienceSkills {
+    background: $tertiaryColor;
+    height: 600px;
+    margin-top: 5%;
 
     h4 {
         font-size: 5rem;
         text-transform: none;
-        margin: 25px 0 25px 10%;
+        margin: 25px 0 10px 10%;
     }
     .skillsIcons {
         font-size: 4rem;
-        background: $tertiaryColor;
         display: flex;
         flex-direction: column;
+        padding-bottom: 5%;
 
         ul {
             display: flex;
@@ -142,26 +146,30 @@ header {
 }
 
 .iconsTransform {
-    display: none;    
+    display: none;  
+    font-size: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 0;
 }
 
 .experienceSkills li {
         color: $primaryColor;
         position: relative;
+        transition: all .5s ease-in;
 
         &:hover,
         &:active,
         &:focus {
-            font-size: 6rem;
-            transition: all .5s ease-in-out;
+            font-size: 5rem;
+            transform: scale(1.25);
 
             .iconsTransform {
                 display: block;
-                font-size: 2rem;
                 position: absolute;
                 bottom: -40px;
                 left: 1px;
-                transition: all .5s ease-in-out;
+                transition: all 1s ease-in;
             }
         }
 }
@@ -192,6 +200,7 @@ header {
             img {
                 height: 700px;
                 object-fit: contain;
+                margin-top: 25px;
             }
 
             h5 {
@@ -224,6 +233,7 @@ header {
 
     .project1Content {
         display: flex;
+        align-items: center;
 
         .project1SmImage {
             flex-basis: 40%;
@@ -248,6 +258,7 @@ header {
         }
     }
 }
+
 
 .project2Parent {
     display: flex;
@@ -341,6 +352,7 @@ header {
 
             li {
                 padding-left: 15px;
+                font-size: 1.5rem;
             }
         }
     }
@@ -386,19 +398,17 @@ header {
     }
 
     .submitBtn {
-        font-family: $styleFont;
         font-size: 2.5rem;
         text-transform: uppercase;
-        background: $secondaryColor;
+        background: $tertiaryColor;
         color: $primaryColor;
-        padding: 8px;
+        padding: 10px;
         border: 3px solid $tertiaryColor;
         &:hover,
         &:focus,
         &:active {
             cursor: pointer;
-            background-color: $primaryColor;
-            color: $secondaryColor;
+            background-color: $secondaryColor;
             border: 3px solid $secondaryColor;
         }
     }
