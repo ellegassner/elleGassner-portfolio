@@ -545,6 +545,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10%;
 }
 .websitesParent .websitesImages .website1,
 .websitesParent .websitesImages .website2 {
@@ -560,146 +561,124 @@ header {
 }
 .websitesParent .websitesImages .website1 h5,
 .websitesParent .websitesImages .website2 h5 {
-  margin-top: 25px;
+  margin: 25px 0;
+}
+.websitesParent .websitesImages .website1 a,
+.websitesParent .websitesImages .website2 a {
+  text-decoration: none;
+  background: #6D9886;
+  color: #F6F6F6;
+  padding: 10px;
+  margin-right: 10px;
+}
+.websitesParent .websitesImages .website1 a:hover, .websitesParent .websitesImages .website1 a:focus,
+.websitesParent .websitesImages .website2 a:hover,
+.websitesParent .websitesImages .website2 a:focus {
+  background: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.websitesParent .websitesImages .website1 a i,
+.websitesParent .websitesImages .website2 a i {
+  margin-right: 5px;
 }
 
 .project1Parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10% auto;
 }
 .project1Parent .project1Text {
-  text-align: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 .project1Parent .project1Text h4 {
   margin: 10px 0 25px 0px;
   background-image: url(../assets/93812-[Converted].png);
   background-position: left;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
 }
 .project1Parent .project1Text p {
   margin-bottom: 25px;
+}
+.project1Parent .project1Text .projectLinks {
+  margin: 0 auto;
+}
+.project1Parent .project1Text .projectLinks a {
+  text-decoration: none;
+  background: #6D9886;
+  color: #F6F6F6;
+  padding: 10px;
+  margin-right: 10px;
+}
+.project1Parent .project1Text .projectLinks a:hover, .project1Parent .project1Text .projectLinks a:focus {
+  background: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.project1Parent .project1Text .projectLinks a i {
+  margin-right: 5px;
 }
 .project1Parent .project1Content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.project1Parent .project1Content .project1SmImage {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.project1Parent .project1Content .project1SmImage img {
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding-left: 5%;
-}
-.project1Parent .project1Content .project1MainImage {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-.project1Parent .project1Content .project1MainImage img {
-  width: auto;
-  height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .project2Parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10% auto;
+}
+.project2Parent .project2ImageParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .project2Parent .project2Content {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-left: 30px;
 }
 .project2Parent .project2Content h4 {
   background-image: url(../assets/93812-[Converted].png);
   background-position: left;
   background-repeat: no-repeat;
-}
-
-.project2ImageParent {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.project2ImageParent .project2ImagesGrp1 {
-  -ms-flex-preferred-size: calc(50% - 15px);
-      flex-basis: calc(50% - 15px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.project2ImageParent .project2ImagesGrp1 .project2Image1Grp1 img {
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-bottom: 15px;
 }
-.project2ImageParent .project2ImagesGrp1 .project2Image2Grp1 img {
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.project2Parent .project2Content .projectLinks {
+  margin: 0 auto;
 }
-.project2ImageParent .project2ImagesGrp2 {
-  -ms-flex-preferred-size: calc(50% - 15px);
-      flex-basis: calc(50% - 15px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.project2Parent .project2Content .projectLinks a {
+  text-decoration: none;
+  background: #6D9886;
+  color: #F6F6F6;
+  padding: 10px;
+  margin-right: 10px;
 }
-.project2ImageParent .project2ImagesGrp2 .project2Image1Grp2 img {
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 0px;
+.project2Parent .project2Content .projectLinks a:hover, .project2Parent .project2Content .projectLinks a:focus {
+  background: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
-.project2ImageParent .project2ImagesGrp2 .project2Image2Grp2 img {
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 15px;
+.project2Parent .project2Content .projectLinks a i {
+  margin-right: 5px;
 }
 
 .contactParent {
@@ -741,6 +720,11 @@ header {
   font-size: 3rem;
   padding: 5px;
   color: #6D9886;
+}
+.contactParent .socialIcons a:hover, .contactParent .socialIcons a:focus {
+  color: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .contactForm {
@@ -794,6 +778,8 @@ header {
   cursor: pointer;
   background-color: #212121;
   border: 3px solid #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .footerParent {
@@ -810,6 +796,11 @@ header {
 .footerParent .toTop {
   color: #6D9886;
   font-size: 3rem;
+}
+.footerParent .toTop:hover, .footerParent .toTop:focus {
+  color: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .footerParent .paintSwatchCredits {
   font-size: 1.5rem;
@@ -867,13 +858,14 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    margin-bottom: 5%;
   }
   .websitesParent .websitesContent h4 {
     text-align: center;
     font-size: 5rem;
     line-height: 6.5rem;
     background-size: initial;
-    background-position: right;
+    background-position: center;
   }
   .websitesParent .websitesImages {
     -webkit-box-pack: space-evenly;
@@ -895,9 +887,19 @@ header {
     text-align: center;
   }
 
+  .project1Parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project1Parent .project1Text {
+    text-align: center;
+  }
   .project1Parent .project1Text h4 {
     font-size: 5rem;
     line-height: 6.5rem;
+    background-position: center;
   }
   .project1Parent .project1Content {
     -webkit-box-orient: horizontal;
@@ -908,25 +910,6 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-right: 0;
-  }
-  .project1Parent .project1Content .project1SmImage {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-  .project1Parent .project1Content .project1SmImage img {
-    width: 100%;
-    padding-left: 0;
-  }
-  .project1Parent .project1Content .project1MainImage {
-    -ms-flex-preferred-size: 80%;
-        flex-basis: 80%;
-  }
-  .project1Parent .project1Content .project1MainImage img {
-    margin: 25px auto;
-    height: 600px;
-    width: 90%;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 
   .project2Parent {
@@ -945,19 +928,6 @@ header {
     background-size: initial;
     background-position: center;
     margin-bottom: 25px;
-  }
-
-  .project2ImageParent .project2ImagesGrp1 .project2Image1Grp1 img {
-    height: 275px;
-  }
-  .project2ImageParent .project2ImagesGrp1 .project2Image2Grp1 img {
-    height: 325px;
-  }
-  .project2ImageParent .project2ImagesGrp2 .project2Image1Grp2 img {
-    height: 275px;
-  }
-  .project2ImageParent .project2ImagesGrp2 .project2Image2Grp2 img {
-    height: 325px;
   }
 
   .contactParent {
@@ -996,16 +966,28 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
   .aboutParent .aboutImage img {
     width: 50%;
-    margin: 0 auto;
+    margin: 5% auto;
   }
   .aboutParent .aboutContent {
     text-align: center;
+    margin: 10px 0 5% 0;
   }
   .aboutParent .aboutContent h4 {
     background-position: center;
+  }
+
+  .websitesParent {
+    margin-bottom: 15%;
+  }
+  .websitesParent .websitesContent h4 {
+    background-position: center;
+  }
+  .websitesParent .websitesImages .website2Image {
+    margin-top: 10%;
   }
 
   .powerSkills {
@@ -1055,15 +1037,6 @@ header {
   .project1Parent .project1Content {
     text-align: center;
   }
-  .project1Parent .project1Content .project1SmImage {
-    display: none;
-  }
-  .project1Parent .project1Content .project1MainImage {
-    margin: 0 auto;
-  }
-  .project1Parent .project1Content .project1MainImage img {
-    margin: 0 auto;
-  }
 }
 @media (max-width: 800px) {
   .wrapper {
@@ -1103,6 +1076,9 @@ header {
     text-align: center;
   }
 
+  .project2Parent .project2Content {
+    margin-top: 10%;
+  }
   .project2Parent .project2Content h4 {
     background-position: center;
     margin-bottom: 25px;
@@ -1111,15 +1087,6 @@ header {
   .project2Parent .project2Content p {
     padding: 0 10px;
     margin-bottom: 5%;
-  }
-
-  .project2ImageParent {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 25px;
-  }
-  .project2ImageParent .project2ImagesGrp2 {
-    margin-right: 0;
   }
 
   .contactParent h4 {
@@ -1217,28 +1184,6 @@ header {
     background-position: center;
   }
 
-  .project1Parent .project1Content .project1SmImage {
-    display: block;
-    margin: 0 auto;
-  }
-  .project1Parent .project1Content .project1SmImage img {
-    height: 400px;
-  }
-  .project1Parent .project1Content .project1MainImage {
-    display: none;
-  }
-
-  .project2ImageParent .project2ImagesGrp1 {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-  }
-  .project2ImageParent .project2ImagesGrp1 .project2Image1Grp1 {
-    padding-top: 10px;
-  }
-  .project2ImageParent .project2ImagesGrp2 {
-    display: none;
-  }
-
   .contactForm .userDetails {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1283,6 +1228,11 @@ header {
   }
 }
 @media (max-width: 400px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .aboutParent .aboutImage img {
     width: 70%;
   }
@@ -1322,10 +1272,6 @@ header {
   .project1Parent .project1Text h4 {
     font-size: 4rem;
     line-height: 5rem;
-  }
-  .project1Parent .project1Content .project1MainImage img {
-    height: 300px;
-    width: 100%;
   }
 
   .project2Parent .project2Content h4 {
