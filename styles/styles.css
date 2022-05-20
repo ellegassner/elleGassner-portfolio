@@ -341,10 +341,6 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
 }
 
 .navParent {
@@ -832,10 +828,8 @@ header {
     background-image: url(../assets/elleGassnerMountainsMobileBg.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
   }
 
   .headerContent {
