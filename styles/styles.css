@@ -828,7 +828,7 @@ header {
     background-image: url(../assets/elleGassnerMountainsMobileImage.png) !important;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: revert;
   }
 
   .headerContent {
