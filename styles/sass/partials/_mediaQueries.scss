@@ -21,11 +21,13 @@
     }
 
     header {
-        background-image: url(../assets/elleGassnerMountainsMobileBg.jpg);
+        background-image: url(../assets/elleGassnerMountainsMobileImage.png);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        height: 100%;
+        -moz-appearace:none;
+        -webkit-appearace:none;
+        -appearace:none;
     }
 
     .headerContent {
