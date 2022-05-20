@@ -1228,6 +1228,10 @@ header {
   }
 }
 @media (max-width: 400px) {
+  header {
+    background-image: url(../assets/elleGassnerMountainsMobileImage.png);
+  }
+
   p {
     font-size: 1.5rem;
     line-height: 2rem;
