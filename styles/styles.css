@@ -340,7 +340,6 @@ header {
   background-image: url(../assets/elleGassnerHomeBgImage.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .navParent {
@@ -828,7 +827,6 @@ header {
     background-image: url(../assets/elleGassnerMountainsMobileImage.png) !important;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
   }
 
   .headerContent {
