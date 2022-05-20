@@ -20,6 +20,13 @@
         width: 85%;
     }
 
+    header {
+        background-image: url(../assets/elleGassnerMountainsMobileImage.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
     .headerContent {
         margin-top: 30%;
         
@@ -469,12 +476,6 @@
 }
 
 @media (max-width: 400px) {
-    header {
-        background-image: url(../assets/elleGassnerMountainsMobileImage.png);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    
     p {
         font-size: 1.5rem;
         line-height: 2rem;
