@@ -825,13 +825,10 @@ header {
   }
 
   header {
-    background-image: url(../assets/elleGassnerMountainsMobileImage.png);
+    background-image: url(../assets/elleGassnerMountainsMobileImage.png) !important;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    -moz-appearace: none;
-    -webkit-appearace: none;
-    -appearace: none;
   }
 
   .headerContent {
