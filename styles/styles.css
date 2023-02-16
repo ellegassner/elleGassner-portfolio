@@ -524,6 +524,55 @@ header {
   transition: all 1s ease-in;
 }
 
+.clientProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10% auto;
+}
+.clientProjects .clientProjectsText {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+.clientProjects .clientProjectsText h4 {
+  background-image: url(../assets/93812-[Converted].png);
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+.clientProjects .clientImagesParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clientProjects .clientImagesParent .projectLinks {
+  margin: 0 auto;
+  text-align: center;
+}
+.clientProjects .clientImagesParent .projectLinks a {
+  text-decoration: none;
+  background: #6D9886;
+  color: #F6F6F6;
+  padding: 10px 10px 10px 20px;
+  margin-right: 10px;
+}
+.clientProjects .clientImagesParent .projectLinks a:hover, .clientProjects .clientImagesParent .projectLinks a:focus {
+  background: #212121;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.clientProjects .clientImagesParent .projectLinks a i {
+  margin-right: 5px;
+}
+
 .websitesParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,14 +872,12 @@ header {
   .wrapper {
     width: 85%;
   }
-
   header {
     background-image: url(../assets/elleGassnerMountainsMobileImage.png) !important;
     background-size: cover;
     background-position: center;
     background-attachment: revert;
   }
-
   .headerContent {
     margin-top: 30%;
   }
@@ -841,7 +888,6 @@ header {
   .headerContent h3 {
     font-size: 2.75rem;
   }
-
   .aboutParent .aboutContent {
     margin-left: 5%;
   }
@@ -853,12 +899,10 @@ header {
   .aboutParent .aboutContent p {
     font-size: 1.8rem;
   }
-
   .powerSkills .skillsImage img {
     height: 300px;
     width: 550px;
   }
-
   .websitesParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -893,7 +937,6 @@ header {
 .websitesParent .websitesImages .website2 h5 {
     text-align: center;
   }
-
   .project1Parent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -918,7 +961,6 @@ header {
             justify-content: space-between;
     margin-right: 0;
   }
-
   .project2Parent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -936,7 +978,6 @@ header {
     background-position: center;
     margin-bottom: 25px;
   }
-
   .contactParent {
     margin-top: 20%;
   }
@@ -959,7 +1000,6 @@ header {
   .contactParent .contactChild ul li {
     list-style: none;
   }
-
   .contactForm .submitBtn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -986,7 +1026,6 @@ header {
   .aboutParent .aboutContent h4 {
     background-position: center;
   }
-
   .websitesParent {
     margin-bottom: 15%;
   }
@@ -996,7 +1035,6 @@ header {
   .websitesParent .websitesImages .website2Image {
     margin-top: 10%;
   }
-
   .powerSkills {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1014,7 +1052,6 @@ header {
     text-align: center;
     margin-left: 0;
   }
-
   .experienceSkills h4 {
     margin: 5% 0 25px 0;
     text-align: center;
@@ -1025,7 +1062,6 @@ header {
   .experienceSkills .skillsIcons ul {
     padding: 8% 0;
   }
-
   .experienceSkills li:hover, .experienceSkills li:active, .experienceSkills li:focus {
     font-size: 4rem;
   }
@@ -1033,7 +1069,6 @@ header {
     font-size: 1.25rem;
     bottom: -30px;
   }
-
   .project1Parent .project1Text {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
@@ -1049,23 +1084,19 @@ header {
   .wrapper {
     width: 90%;
   }
-
   body {
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
-
   .headerContent {
     margin-top: 40%;
   }
   .headerContent h2 {
     font-size: 6rem;
   }
-
   .aboutParent .aboutContent h4 {
     margin-bottom: 25px;
   }
-
   .websitesParent .websitesImages {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1082,7 +1113,6 @@ header {
 .websitesParent .websitesImages .website2 h5 {
     text-align: center;
   }
-
   .project2Parent .project2Content {
     margin-top: 10%;
   }
@@ -1095,7 +1125,6 @@ header {
     padding: 0 10px;
     margin-bottom: 5%;
   }
-
   .contactParent h4 {
     background-position: center;
   }
@@ -1159,11 +1188,9 @@ header {
     -webkit-transition: all 0.05s ease;
     transition: all 0.05s ease;
   }
-
   .headerContent {
     margin-top: 10%;
   }
-
   .aboutParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1182,15 +1209,27 @@ header {
   .aboutParent .aboutContent h4 {
     background-position: center;
   }
-
   .experienceSkills {
     height: 450px;
   }
-
+  .clientProjects .clientProjectsText h4 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .clientProjects .clientImagesParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clientProjects .clientImagesParent img {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
   .websitesParent .websitesContent h4 {
     background-position: center;
   }
-
   .contactForm .userDetails {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1210,13 +1249,11 @@ header {
             flex-direction: column;
     text-align: center;
   }
-
   .mainNav .mobileNav .toggle {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .headerContent h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1229,7 +1266,6 @@ header {
     line-height: 3rem;
     margin-top: 25px;
   }
-
   .experienceSkills {
     height: 400px;
   }
@@ -1239,14 +1275,16 @@ header {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
   .aboutParent .aboutImage img {
     width: 70%;
   }
   .aboutParent .aboutContent h4 {
     font-size: 4rem;
   }
-
+  .aboutParent .aboutContent p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .powerSkills .skillsContent {
     margin: 0 auto;
   }
@@ -1257,7 +1295,6 @@ header {
   .powerSkills .skillsContent ul {
     padding-left: 5%;
   }
-
   .experienceSkills {
     height: 350px;
   }
@@ -1265,27 +1302,22 @@ header {
     font-size: 4rem;
     margin: 25px 0 0 0;
   }
-
   .websitesParent .websitesContent h4 {
     font-size: 4rem;
     line-height: 5rem;
   }
-
   .websitesParent .websitesImages .website1 img,
 .websitesParent .websitesImages .website2 img {
     height: 400px;
   }
-
   .project1Parent .project1Text h4 {
     font-size: 4rem;
     line-height: 5rem;
   }
-
   .project2Parent .project2Content h4 {
     font-size: 4rem;
     line-height: 5rem;
   }
-
   .contactParent h4 {
     font-size: 4rem;
     line-height: 5rem;
