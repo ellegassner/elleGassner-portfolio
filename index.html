@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Elle's Portfolio</title>
+    <title>elle</title>
 </head>
 <body>
     <header>
@@ -40,7 +40,7 @@
 
             <div class="headerContent">
                 <h2>Create with Intention</h2>
-                <h3>Front end web developer</h3>
+                <h3>Web Developer</h3>
             </div> <!-- header content ends -->
         </div> <!-- wrapper ends -->
     </header>
@@ -54,7 +54,7 @@
 
                 <div class="aboutContent">
                     <h4>About.</h4>
-                    <p>Hello! I’m a front-end developer who has experience as an entrepreneur, designer, and photographer. After building
+                    <p>Hello! I’m a front-end developer who has experience as an entrepreneur, designer, and photographer. After designing
                     websites on various platforms for different companies, my curiosity led me to discover the powerful world of writing
                     code.
                     <br>
@@ -122,6 +122,30 @@
         </section> <!-- skills section ends -->
 
         <section class="projects" id="projects">
+            <div class="clientProjects wrapper">
+                <div class="clientProjectsText">
+                    <h4>Client Websites</h4>
+                    <p>Two websites designed for separate client businesses. BC Makers Collective is a Shopify store that I migrated to 2.0 and created an updated look. The Birth Coaching business was built using Squarespace.
+                        <br>
+                        <br>
+                        Squarespace | Shopify
+                    </p>
+                </div> <!-- clientProjectsText ends -->
+                <div class="clientImagesParent">
+                    <div class="client1ImageParent">
+                        <img src="./assets/elleGassnerClareRobinsonBirthCoaching.png" alt="Computer and phone views of the Birth Coaching Website that was designed in Squarespace.">
+                        <div class="projectLinks">
+                            <a href="https://www.clarerobinson.ca/"><i class="fa-solid fa-square-arrow-up-right"></i>Live Site</a>
+                        </div>
+                    </div>
+                    <div class="client2ImageParent">
+                        <img src="./assets/elleGassnerBcMakersCollective.png" alt="Computer and phone views of the website for BC Makers Collective that was designed on Shopify.">
+                        <div class="projectLinks">
+                            <a href="https://bcmakerscollective.com/"><i class="fa-solid fa-square-arrow-up-right" aria-hidden="true"></i>Live Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- clientProjects ends -->
             <div class="websitesParent">
                 <div class="websitesContent wrapper">
                     <h4>Responsive Websites</h4>
@@ -129,24 +153,86 @@
                     built to be semantically accessible and responsive for all users.
                     <br>
                     <br>
-                    HTML | CSS | SCSS | JS</p>
+                    HTML5 | CSS3 | SCSS | JS</p>
                 </div><!-- websitesContent + wrapper ends -->
                 <div class="websitesImages">
                     <div class="website1">
                         <div class="website1Image">
-                            <a href="https://reliable-manatee-995f8a.netlify.app/"><img src="./assets/elleGassnerAroraFullImage.png" alt="Full size image of a psd conversion website, showcasing a jewelry shop."></a>
+                            <img src="./assets/elleGassnerAroraFullImage.png" alt="Full size image of a psd conversion website, showcasing a jewelry shop.">
                         </div>
                         <h5>Arora</h5>
+                        <a href="https://projectarora.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live Site</a>
+                        <a href="https://github.com/ellegassner/arora"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
                     </div> <!-- website1 ends -->
                     <div class="website2">
                         <div class="website2Image">
-                            <a href="https://heuristic-archimedes-c39059.netlify.app/"><img src="./assets/elleGassnerBeachstayFullImage.png" alt="Full size image of a psd conversion website, showing a beach vacation location."></a>
+                            <img src="./assets/elleGassnerBeachstayFullImage.png" alt="Full size image of a psd conversion website, showing a beach vacation location.">
                         </div>
                         <h5>Beachstay</h5>
+                        <a href="https://beachstay.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live Site</a>
+                        <a href="https://github.com/ellegassner/beachStay"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
                     </div> <!-- website2 ends -->
                 </div> <!-- websitesImages ends -->
             </div> <!-- websitesParent ends -->
-
+            
+            <div class="project2Parent wrapper">
+                <div class="project2ImageParent">
+                    <img src="./assets/elleGassnerSuperheroes.png" alt="Computer and phone views of the extraordinary collective of superheroes app.">
+                </div>
+                <div class="project2Content">
+                    <h4>Earthquake Detection</h4>
+                    <p>In this group project, we were assigned a client brief, contracted out by the Extraordinary Collective of Superheroes. By utilizing the USGS + Leaflet API's along with Firebase, we created a dashboard app that allows the user to view Earthquakes that happened within the last 24 hours.
+                        <br>
+                        <br>
+                        HTML5 | SCSS | JS | React | Firebase
+                    </p>
+                    <div class="projectLinks">
+                        <a href="https://earthquake-detection.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live Site</a>
+                        <a href="https://github.com/ellegassner/earthquake-detection-program"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+                    </div>
+                </div> <!-- project2Content ends -->
+            </div> <!-- project2Parent + wrapper ends -->
+            <div class="project1Parent wrapper">
+                <div class="project1Text">
+                    <h4>Get Planted</h4>
+                    <p>Looking for the perfect plant for your needs? I created a Firebase "mini-API" with plant information, gathered from multiple sources that allows the user to choose the right difficulty level, size and sunlight requirements and then returns the best plant for those conditions!
+                    <br>
+                    <br>
+                    HTML5 | CSS3 | JS | React | Firebase
+                    </p>
+                    <div class="projectLinks">
+                        <a href="https://getplanted.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live
+                            Site</a>
+                        <a href="https://github.com/ellegassner/getPlanted"><i class="fa-brands fa-github"
+                                aria-hidden="true"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="project1Content">
+                    <img src="./assets/elleGassnerGetPlanted.png"
+                        alt="Computer and phone view of the Get Planted App.">
+                </div> <!-- appProject1Content ends -->
+            </div> <!-- Project1Parent  + wrapper ends -->
+            <div class="project2Parent wrapper">
+                <div class="project2ImageParent">
+                    <img src="./assets/elleGassnerMovieTrivia.png" alt="Computer and phone views of the movie trivia app.">
+                </div>
+                <div class="project2Content">
+                    <h4>Movie Trivia</h4>
+                    <p>Web application utilizing the TMDb API to create a movie trivia game, where the user has to guess the release
+                        date for
+                        each movie shown. Paired project with Theo Mitchell at Juno College of Technology.
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | SCSS | JS
+                    </p>
+                    <div class="projectLinks">
+                        <a href="https://movietriviabydate.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live
+                            Site</a>
+                        <a href="https://github.com/ellegassner/movieTriviaPortfolio"><i class="fa-brands fa-github"
+                                aria-hidden="true"></i>GitHub</a>
+                    </div>
+                </div> <!-- project2Content ends -->
+            </div> <!-- project2Parent + wrapper ends -->
             <div class="project1Parent wrapper">
                 <div class="project1Text">
                     <h4>Find Your New Best Friend</h4>
@@ -155,46 +241,17 @@
                     <br>
                     <br>
                     HTML5 | CSS3 | jQuery</p>
+                    <div class="projectLinks">
+                        <a href="https://findyournewbestfriend.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i>Live Site</a>
+                        <a href="https://github.com/ellegassner/newBestFriend"><i class="fa-brands fa-github"
+                                aria-hidden="true"></i>GitHub</a>
+                    </div>
                 </div>
                 <div class="project1Content">
-                    <div class="project1SmImage">
-                        <a href="https://tourmaline-dodol-c60bc1.netlify.app/"><img src="./assets/elleGassnerBestFriendMobileImage.png" alt="Photo of a random dog finder app with phone picture surrounding it, to communicate that it's a mobile friendly design."></a>
-                    </div> <!-- appProject1SmImage ends -->
-                    <div class="project1MainImage">
-                        <a href="https://tourmaline-dodol-c60bc1.netlify.app/"><img src="./assets/elleGassnerBestFriendWebImage.png" alt="Full photo of random dog finder app."></a>
-                    </div> <!-- appProject1MainImage ends -->
+                    <img src="./assets/elleGassnerNewBestFriend.png"
+                            alt="Computer and view view of new best friend app for finding random dog breeds.">
                 </div> <!-- appProject1Content ends -->
-
-            </div> <!-- appProject1Parent  + wrapper ends -->
-        
-            <div class="project2Parent wrapper">
-                <div class="project2ImageParent">
-                    <div class="project2ImagesGrp1">
-                        <div class="project2Image1Grp1">
-                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaSmImage1.png" alt="Photo of front page of movie trivia app."></a>
-                        </div>
-                        <div class="project2Image2Grp1">
-                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaLgImage1.png" alt="Photo of the quiz layout on a movie trivia app."></a>
-                        </div>
-                    </div> <!-- project2ImagesGrp1 ends -->
-                    <div class="project2ImagesGrp2">
-                        <div class="project2Image2Grp2">
-                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaLgImage2.png" alt="Photo of the quiz results and layout on a movie trivia app."></a>
-                        </div>
-                        <div class="project2Image1Grp2">
-                            <a href="https://prismatic-kulfi-b2b201.netlify.app/"><img src="./assets/elleGassnerMovieTriviaDevImage.png" alt="Photo of the movie trivia app's developers page."></a>
-                        </div>
-                    </div> <!-- project2ImagesGrp2 ends -->
-                </div>
-                <div class="project2Content">
-                    <h4>Movie Trivia</h4>
-                    <p>Web application utilizing the TMDb API to create a movie trivia game, where the user has to guess the release date for
-                    each movie shown. Paired project with Theo Mitchell at Juno College of Technology.
-                    <br>
-                    <br>
-                    HTML5 | CSS3 | SCSS | JS</p>
-                </div> <!-- project2Content ends -->
-            </div> <!-- project2Parent + wrapper ends -->
+            </div> <!-- Project1Parent  + wrapper ends -->
         </section> <!-- projects section ends -->
 
         <section class="contact" id="contact">
@@ -221,16 +278,16 @@
                     <div class="contactInfo">
                         <ul>
                             <li>Squamish, BC</li>
-                            <li>elle[dot]a[dot]gassner[at]gmail.com</li>
+                            <li>elle.a.gassner at gmail</li>
                         </ul>
                     </div> <!-- contactInfo ends -->
                 </div> <!-- contactChild ends -->
                 <ul class="socialIcons">
-                    <li><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/ellegassner"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
                     <span class="sr-only">Link to GitHub</span>
-                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/elle-gassner/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
                     <span class="sr-only">Link to LinkedIn</span>
-                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/ElleGassner"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
                     <span class="sr-only">Link to Twitter</span>
                 </ul> <!-- socialIcons ends -->
             </div> <!-- contactParent + wrapper ends -->
